@@ -1,1 +1,1 @@
-# algorithms-robert-sedgewick
+This repo contains the implementations of the algorithms taught by Robert Sedgewick in the lecture series called "Algorithms (Video Lectures): 24-part Lecture Series" available at http://www.informit.com/store/algorithms-video-lectures-24-part-lecture-series-9780134384436
