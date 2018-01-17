@@ -30,10 +30,10 @@ public class WeightedQuickUnionUF {
 		int rootQ = root(q);
 		if(size[rootP] > size[rootQ]) {
 			id[rootQ] = rootP;
-			size[rootP] += 1;
+			size[rootP] += size[rootQ];
 		} else {
 			id[rootP] = rootQ;
-			size[rootQ] += 1;
+			size[rootQ] += size[rootP];
 		}
 	}
 	
