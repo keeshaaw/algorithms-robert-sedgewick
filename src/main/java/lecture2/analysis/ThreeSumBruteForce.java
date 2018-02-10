@@ -7,8 +7,10 @@ public class ThreeSumBruteForce {
 		for(int i = 0; i < N; i++) {
 			for(int j = i + 1; j < N; j++) {
 				for(int k = j + 1; k < N; k++) {
-					if(a[i] + a[j] + a[k] == 0) {
+					int sum = a[i] + a[j] + a[k];
+					if(sum == 0) {
 						count++;
+						System.out.println(a[i] + " + " + a[j] + " + " + a[k] + " = " + sum);
 					}
 				}
 			}
