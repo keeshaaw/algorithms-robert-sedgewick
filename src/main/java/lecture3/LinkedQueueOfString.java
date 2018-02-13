@@ -35,6 +35,7 @@ public class LinkedQueueOfString {
 	public String dequeue() {
 		String item = head.item;
 		head = head.next;
+		if(isEmpty()) tail = null;
 		return item;
 	}
 
