@@ -23,10 +23,10 @@ public class LinkedQueueOfString {
 		Node node = new Node();
 		node.next = null;
 		node.item = item;
-		
+
 		if (this.isEmpty()) {
 			head = tail = node;
-		} else{
+		} else {
 			tail.next = node;
 			tail = node;
 		}
@@ -35,7 +35,8 @@ public class LinkedQueueOfString {
 	public String dequeue() {
 		String item = head.item;
 		head = head.next;
-		if(isEmpty()) tail = null;
+		if (isEmpty())
+			tail = null;
 		return item;
 	}
 
@@ -44,7 +45,8 @@ public class LinkedQueueOfString {
 		Node headTemp = head;
 		while (true) {
 			System.out.print(headTemp.item + " ");
-			if(headTemp.next == null) break;
+			if (headTemp.next == null)
+				break;
 			headTemp = headTemp.next;
 		}
 		System.out.println();
